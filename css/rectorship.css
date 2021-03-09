@@ -1,0 +1,56 @@
+.rectorship-body {
+    /* background-color: red; */
+}
+
+.rectorship-body div h4 {
+    /* background-color: blue; */
+}
+
+.rectorship-body div .img-info {
+    /* display: flex; */
+    /* flex-direction: row; */
+    display: flex;
+    transition: all 0.2s linear;
+}
+
+@media all and ( max-width:768px) {
+    .rectorship-body div .img-info {
+        /* display: flex; */
+        /* flex-direction: row; */
+        flex-direction: column;
+    }
+}
+
+.rectorship-body div .img-info .image-person {
+    /* float: left; */
+    width: 460px;
+    height: 460px;
+    background: url('../img/rectorshipPerson.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+@media all and ( max-width: 768px) {
+    .rectorship-body div .img-info .image-person {
+        /* float: left; */
+        width: 100%;
+        height: auto;
+    }
+}
+
+.rectorship-body div .img-info div {
+    /* float: left; */
+    margin-left: 20px;
+    width: 60%;
+    transition: all 0.2s linear;
+}
+
+@media all and ( max-width: 768px) {
+    .rectorship-body div .img-info div {
+        /* float: left; */
+        width: 100%;
+        margin-left: 0;
+    }
+}
