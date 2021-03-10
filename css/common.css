@@ -1,0 +1,27 @@
+.common-body {
+    width: 50%;
+    transition: all 0.2s linear;
+}
+
+.common-body p {
+    margin-left: 0;
+}
+
+.common-body h1 {
+    font-size: 36px;
+}
+
+@media all and ( max-width: 1024px) {
+    .common-body {
+        width: 90%;
+        /* transition: all 0.2s linear; */
+        /* align-self: center; */
+    }
+}
+
+.common-bg {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: -100px;
+}

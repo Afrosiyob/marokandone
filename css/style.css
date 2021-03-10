@@ -6,6 +6,7 @@
 @import 'history.css';
 @import 'rectorship.css';
 @import 'univercity.css';
+@import 'common.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
