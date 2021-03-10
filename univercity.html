@@ -12,9 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/history.css" />
-    <link rel="stylesheet" href="css/board.css" />
-    <link rel="stylesheet" href="css/univercity.css" />
 </head>
 
 <body>
@@ -157,7 +154,7 @@
             <div class="person-card-wrap">
                 <div class="person-card">
                     <div class="left-info">
-                        <div class="image-person"></div>
+                        <div class="image-person" style="background-image: url('img/person3.png')"></div>
 
                         <div class="center-info">
                             <h4><b>Prof. Dr. Güven SAK</b></h4>
@@ -194,7 +191,7 @@
             <div class="person-card-wrap">
                 <div class="person-card">
                     <div class="left-info">
-                        <div class="image-person"></div>
+                        <div class="image-person" style="background-image: url('img/person2.png')"></div>
 
                         <div class="center-info">
                             <h4><b>Prof. Dr. Güven SAK</b></h4>
@@ -311,36 +308,12 @@
 
     <script>
         $(document).ready(function() {
-            let door = false;
-
             var a = $(".person-card");
 
             a.click(function() {
-                // a.not(this).removeClass('bg');
-                // $(this).toggleClass('bg');
-
                 $(this).next().slideToggle(500);
                 a.not(this).next().slideUp(500);
-
-                // $(this).children('i.fa:last-child').toggleClass('transform');
-                // a.not(this).children('i.fa:last-child').removeClass('transform');
             });
-
-            // $("#slideDown").click(function(e) {
-            //     if (door == false) {
-            //         $(this).css({
-            //             transform: "rotate(180deg)",
-            //         });
-            //         door = true;
-            //     } else {
-            //         $(this).css({
-            //             transform: "rotate(0deg)",
-            //         });
-            //         door = false;
-            //     }
-
-            //     $("#under-card-info").slideToggle();
-            // });
         });
 
         const swiper = new Swiper(".swiper-container", {

@@ -1,3 +1,11 @@
+@import 'aboutUs.css';
+@import 'academicLang.css';
+@import 'academicTash.css';
+@import 'board.css';
+@import 'decision.css';
+@import 'history.css';
+@import 'rectorship.css';
+@import 'univercity.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
