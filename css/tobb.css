@@ -1,0 +1,26 @@
+.tobb-body table tr,
+th,
+td {
+    border: 2px solid #ABABAB;
+    padding: 26px 0;
+    text-align: center;
+}
+
+.tobb-body table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tobb-body table td {
+    color: #ABABAB;
+}
+
+.tobb-body h1 {
+    font-size: 36px;
+}
+
+@media all and ( max-width:1500px) {
+    .tobb-body {
+        padding: 0 50px;
+    }
+}

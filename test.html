@@ -15,6 +15,22 @@
 </head>
 
 <body>
+    <div class="mob-menu">
+        <div>
+            <img src="img/logo.png" alt="" />
+
+            <button id="close-mob-menu">
+          <i class="fas fa-times"></i>
+        </button>
+        </div>
+        <ul class="inner-mob-menu">
+            <li><a href="#!"> International </a></li>
+            <li><a href="#!"> Cooperative Education </a></li>
+            <li><a href="#!"> Academic Calendar </a></li>
+            <li><a href="#!"> Library </a></li>
+            <li><a href="#!"> Contact </a></li>
+        </ul>
+    </div>
     <header>
         <nav>
             <div class="container">
@@ -101,9 +117,7 @@
                 </div>
             </div>
             <div class="header-body">
-                <h2>
-                    HISTORY: <br /> How It All Began
-                </h2>
+                <h2>Second Foreign Language</h2>
             </div>
             <div class="header-footer">this is header footer</div>
         </div>
@@ -144,7 +158,7 @@
               </span>
                     </li>
                     <li>
-                        <a href="#!" class="active">History: How It Was</a>
+                        <a href="#!" class="active">Second Foreign Language</a>
                     </li>
                 </ul>
             </div>
@@ -242,6 +256,20 @@
             a.click(function() {
                 $(this).next().slideToggle(500);
                 a.not(this).next().slideUp(500);
+            });
+            $("#open-mob-menu").click(function(e) {
+                e.preventDefault();
+
+                $(".mob-menu").css({
+                    right: "0px",
+                });
+            });
+
+            $("#close-mob-menu").click(function(e) {
+                e.preventDefault();
+                $(".mob-menu").css({
+                    right: "-350px",
+                });
             });
         });
         const swiper = new Swiper(".swiper-container", {

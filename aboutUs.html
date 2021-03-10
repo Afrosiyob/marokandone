@@ -15,6 +15,22 @@
 </head>
 
 <body>
+    <div class="mob-menu">
+        <div>
+            <img src="img/logo.png" alt="" />
+
+            <button id="close-mob-menu">
+          <i class="fas fa-times"></i>
+        </button>
+        </div>
+        <ul class="inner-mob-menu">
+            <li><a href="#!"> International </a></li>
+            <li><a href="#!"> Cooperative Education </a></li>
+            <li><a href="#!"> Academic Calendar </a></li>
+            <li><a href="#!"> Library </a></li>
+            <li><a href="#!"> Contact </a></li>
+        </ul>
+    </div>
     <header>
         <nav>
             <div class="container">
@@ -72,22 +88,22 @@
 
                 <div class="right-item">
                     <ul>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> International </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Cooperative Education </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Academic Calendar </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Library </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Contact </a>
                         </li>
-                        <li>
+                        <li class="mob-menu">
                             <a href="#!">
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -96,6 +112,9 @@
                     />
                   </svg>
                             </a>
+                        </li>
+                        <li class="mob-menu-bar">
+                            <i id="open-mob-menu" class="fas fa-bars"></i>
                         </li>
                     </ul>
                 </div>
@@ -260,6 +279,20 @@
             a.click(function() {
                 $(this).next().slideToggle(500);
                 a.not(this).next().slideUp(500);
+            });
+            $("#open-mob-menu").click(function(e) {
+                e.preventDefault();
+
+                $(".mob-menu").css({
+                    right: "0px",
+                });
+            });
+
+            $("#close-mob-menu").click(function(e) {
+                e.preventDefault();
+                $(".mob-menu").css({
+                    right: "-350px",
+                });
             });
         });
         const swiper = new Swiper(".swiper-container", {

@@ -7,6 +7,7 @@
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    overflow: hidden;
 }
 
 .history-header .history-header-footer-wrap {
@@ -71,11 +72,37 @@
     /* background-color: blue; */
     display: flex;
     list-style-type: none;
+    padding-right: 20px;
+    transition: all 0.2s linear;
+    justify-content: flex-end;
 }
 
 .history-header .header-nav .right-item ul li {
     padding: 0 10px;
     /* color: white; */
+}
+
+.history-header .header-nav .right-item ul li i {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
+
+@media all and ( max-width:768px) {
+    .history-header .header-nav .right-item ul li i {
+        display: flex;
+    }
+}
+
+.history-header .header-nav .right-item ul li i:hover {
+    cursor: pointer;
+}
+
+@media all and ( max-width:768px) {
+    .history-header .header-nav .right-item ul li.menu {
+        display: none;
+    }
 }
 
 .history-header .header-nav .right-item ul li a {

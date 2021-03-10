@@ -1,5 +1,6 @@
 .rectorship-body {
     /* background-color: red; */
+    padding: 20px;
 }
 
 .rectorship-body div h4 {
@@ -32,6 +33,7 @@
     background-size: cover;
     border-radius: 20px;
     transition: all 0.2s linear;
+    margin-bottom: 10px;
 }
 
 @media all and ( max-width: 768px) {

@@ -1,5 +1,6 @@
 .board-page {
     /* background-color: red; */
+    padding: 0 20px;
 }
 
 .board-page div .person-card {
@@ -21,13 +22,24 @@
 }
 
 .board-page div .person-card .left-info .image-person {
-    /* position: absolute; */
-    width: 215px;
-    height: 215px;
-    /* background: url('../img/person.png'); */
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.board-page div .person-card .left-info .image-person img {
+    width: 215px !important;
+    width: 100%;
     border-radius: 20px;
-    background-size: cover;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+@media all and ( max-width:768px) {
+    .board-page div .person-card .left-info .image-person img {
+        width: 215px;
+        height: 215px;
+    }
 }
 
 .board-page div .person-card .left-info .center-info {
@@ -37,7 +49,7 @@
 
 @media all and ( max-width:768px) {
     .board-page div .person-card .left-info .center-info {
-        margin-left: 53px;
+        margin-left: 13px;
         transition: all 0.2s linear;
     }
 }

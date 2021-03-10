@@ -15,6 +15,22 @@
 </head>
 
 <body>
+    <div class="mob-menu">
+        <div>
+            <img src="img/logo.png" alt="" />
+
+            <button id="close-mob-menu">
+          <i class="fas fa-times"></i>
+        </button>
+        </div>
+        <ul class="inner-mob-menu">
+            <li><a href="#!"> International </a></li>
+            <li><a href="#!"> Cooperative Education </a></li>
+            <li><a href="#!"> Academic Calendar </a></li>
+            <li><a href="#!"> Library </a></li>
+            <li><a href="#!"> Contact </a></li>
+        </ul>
+    </div>
     <header>
         <nav>
             <div class="container">
@@ -72,22 +88,22 @@
 
                 <div class="right-item">
                     <ul>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> International </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Cooperative Education </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Academic Calendar </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Library </a>
                         </li>
-                        <li>
+                        <li class="menu">
                             <a href="#!"> Contact </a>
                         </li>
-                        <li>
+                        <li class="mob-menu">
                             <a href="#!">
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -97,11 +113,14 @@
                   </svg>
                             </a>
                         </li>
+                        <li class="mob-menu-bar">
+                            <i id="open-mob-menu" class="fas fa-bars"></i>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="header-body">
-                <h2>Rectorship</h2>
+                <h2>University Executive Board</h2>
             </div>
             <div class="header-footer">this is header footer</div>
         </div>
@@ -142,7 +161,7 @@
               </span>
                     </li>
                     <li>
-                        <a href="#!" class="active">Rectorship</a>
+                        <a href="#!" class="active">University Executive Board</a>
                     </li>
                 </ul>
             </div>
@@ -157,7 +176,7 @@
 
             <div class="img-info">
                 <div class="image-person">
-                    <!-- <img src="./img/rectorshipPerson.png" alt="this" /> -->
+                    <!-- <img src="./img/rectorshipPerson.png " alt="this " /> -->
                 </div>
                 <div>
                     <p>
@@ -178,21 +197,16 @@
               congratulate everyone sincerely on the opening of the branch of
               the University of Economics and Technology of the Union of
               Chambers of Commerce and Commodity Exchanges of Turkey (TOBB ETÜ
-              Tashkent) and the beginning of the first 2020-2021 academic year
-              at our University. It is also worth noting that due to the support
-              and assistance of the Government of the Republıc of Uzbekistan,
-              this project was implemented in a short period of time. It is a
-              great honor for me to see the "first swallows" of our university,
-              as well as highly qualified and experienced professors both from
-              our country and those invited from the Turkish side. I am sure
-              that students who choose our University will become part of the
-              entrepreneurial environment and get original and universal
-              knowledge in the field of entrepreneurship. The university will
-              educate individuals and international business experience. TOBB
-              ETÜ is widely known and very popular in Turkey. It was ranked 32nd
-              in 2018 among the best universities in the world founded since
-              2000 in the ranking of Young Universities 2018: Universities of
-              the Millennium!
+              Tashkent) and the beginning of the first 2020-2021 acic year 75%
+              at our University. It is also worth noting that due to and
+              assistance of the Government of the Republıc of Uzbekistan, this
+              project was implemented in a short period of time. It is a great
+              honor for me to see the "first swallows " of our university, as
+              well as highly qualified and experienced professors both from our
+              country and those invited from the Turkish side. I am sure that
+              students who choose our University will become part of the
+              knowledge i educate indi ETÜ is widely known a in 2018 amo 2000 in
+              the ranking of Young Unive the Millennium!
             </p>
           </div>
         </div>
@@ -200,10 +214,10 @@
         <div class="under-info">
           <p>
             The TOBB ETÜ has adopted as a basis in its curriculum and education
-            system elements of dual education, aimed at "co-education" with
+            system elements of dual education, aimed at "co-education " with
             industry, where theoretical knowledge and practice are presented in
-            balance. The "Cooperative Education" program was introduced. The aim
-            of the program is to provide work experience to students in
+            balance. The "Cooperative Education " program was introduced. The
+            aim of the program is to provide work experience to students in
             companies in Turkey or abroad prior to earning a bachelor's degree.
             TOBB ETÜ has a special place in the Turkish higher education system.
             TOBB ETÜ Tashkent branch will try in its first year of foundation
@@ -306,8 +320,34 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
+      $(document).ready(function () {
+        let door = false;
+
+        var a = $(".person-card");
+
+        a.click(function () {
+          $(this).next().slideToggle(500);
+          a.not(this).next().slideUp(500);
+        });
+        $("#open-mob-menu").click(function (e) {
+          e.preventDefault();
+
+          $(".mob-menu").css({
+            right: "0px",
+          });
+        });
+
+        $("#close-mob-menu").click(function (e) {
+          e.preventDefault();
+          $(".mob-menu").css({
+            right: "-350px",
+          });
+        });
+      });
       const swiper = new Swiper(".swiper-container", {
         // Optional parameters
         effect: "fade",

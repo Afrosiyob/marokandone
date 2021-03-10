@@ -1,0 +1,62 @@
+.second-body .second-header {
+    /* background-color: red; */
+}
+
+.second-body {
+    padding: 0 20px;
+}
+
+.second-body .second-header h1 {
+    font-size: 36px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.second-body .second-header p {
+    width: 50%;
+    transition: all 0.2s linear;
+}
+
+@media all and ( max-width: 1024px) {
+    .second-body .second-header p {
+        width: 100%;
+    }
+}
+
+.second-body .second-under {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 45px;
+}
+
+@media all and ( max-width:1250px) {
+    .second-body .second-under {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media all and ( max-width:876px) {
+    .second-body .second-under {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and ( max-width:768px) {
+    .second-body .second-under {
+        grid-template-columns: 1fr;
+    }
+}
+
+.second-body .second-under .second-under-item {
+    background-color: red;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    height: 326px;
+    border-radius: 20px;
+    background-image: url('../img/second1.jfif');
+    background-size: cover;
+    background-position: center;
+    content: "";
+}
