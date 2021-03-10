@@ -29,7 +29,7 @@ body {
 }
 
 div.mob-menu {
-    padding: 20px;
+    /* padding: 20px; */
     position: fixed;
     right: -350px;
     top: 0;
@@ -45,15 +45,16 @@ div.mob-menu {
 }
 
 div.mob-menu div {
-    width: 100%;
+    width: 85%;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 div.mob-menu div img {
-    width: 200px;
+    width: 150px;
 }
 
 div.mob-menu ul.inner-mob-menu {
@@ -62,15 +63,44 @@ div.mob-menu ul.inner-mob-menu {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    overflow-y: auto;
+}
+
+div.mob-menu ul.inner-mob-menu li a.sub-menu i {
+    margin-right: 10px;
+    transition: all 0.2s linear;
+}
+
+.angle-down {
+    transform: rotate(180deg);
+}
+
+div.mob-menu ul.inner-mob-menu li .under-sub-menu {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    display: none;
+    font-size: 14px;
+}
+
+div.mob-menu ul.inner-mob-menu li .under-sub-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.mob-menu ul.inner-mob-menu li .under-sub-menu ul li a {
+    color: var(--red) !important;
 }
 
 div.mob-menu ul.inner-mob-menu li {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 div.mob-menu ul.inner-mob-menu li a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
 }
 
 div.mob-menu div button {
