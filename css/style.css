@@ -66,6 +66,12 @@ div.mob-menu ul.inner-mob-menu {
     overflow-y: auto;
 }
 
+@media all and ( max-width:768px) {
+    div.top-mob-menu {
+        display: none;
+    }
+}
+
 div.mob-menu ul.inner-mob-menu li a.sub-menu i {
     margin-right: 10px;
     transition: all 0.2s linear;
