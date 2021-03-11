@@ -21,6 +21,14 @@
     align-content: center;
 }
 
+.slide-down-icon {
+    transition: all 0.2s linear;
+}
+
+.slide-down-icon-active {
+    transform: rotate(180deg);
+}
+
 .board-page div .person-card .left-info .image-person {
     display: flex;
     justify-content: center;

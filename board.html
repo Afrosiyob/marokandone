@@ -334,7 +334,7 @@
                             <p>Rector of TOBB ETU, Chairman of the Board of Trustees</p>
                         </div>
                     </div>
-                    <span id="slideDown"><svg
+                    <span id="slideDown" class="slide-down-icon"><svg
                 width="22"
                 height="26"
                 viewBox="0 0 22 26"
@@ -375,7 +375,7 @@
                             </p>
                         </div>
                     </div>
-                    <span id="slideDown"><svg
+                    <span id="slideDown" class="slide-down-icon"><svg
                 width="22"
                 height="26"
                 viewBox="0 0 22 26"
@@ -486,11 +486,18 @@
 
     <script>
         $(document).ready(function() {
+
             var a = $(".person-card");
 
             a.click(function() {
                 $(this).next().slideToggle(500);
                 a.not(this).next().slideUp(500);
+                $(this)
+                    .children(".slide-down-icon")
+                    .toggleClass("slide-down-icon-active");
+                a.not(this)
+                    .children(".slide-down-icon")
+                    .removeClass("slide-down-icon-active");
             });
 
             $("#open-mob-menu").click(function(e) {
