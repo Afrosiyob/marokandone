@@ -3,6 +3,10 @@
     justify-content: space-between;
 }
 
+.garage-body {
+    padding: 0 20px;
+}
+
 .garage-body .item-one .left-item,
 .right-item {
     width: 49%;
@@ -36,7 +40,14 @@
     }
     .garage-body .item-one .left-item,
     .right-item img {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media all and ( max-width: 768px) {
+    .garage-body .item-one .left-item img {
+        width: 100% !important;
+        height: auto !important;
     }
 }

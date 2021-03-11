@@ -37,8 +37,8 @@
 
 @media all and ( max-width:768px) {
     .board-page div .person-card .left-info .image-person img {
-        width: 215px;
-        height: 215px;
+        width: 115px !important;
+        height: 115px !important;
     }
 }
 
