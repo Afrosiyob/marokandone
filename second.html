@@ -186,11 +186,16 @@
     <header>
         <nav>
             <div class="container">
-                <div class="flex">
-                    <a href="#home">EN</a>
-                    <a href="#news">TR</a>
-                    <a href="#news">UZ</a>
-                    <a href="#news">RU</a>
+                <div class="flex main-top-nav-menu">
+                    <div class="left-menu flex">
+                        <a href="#home">EN</a>
+                        <a href="#news">TR</a>
+                        <a href="#news">UZ</a>
+                        <a href="#news">RU</a>
+                    </div>
+                    <div class="right-menu flex">
+                        <i id="open-mob-menu" class="fas fa-bars"></i>
+                    </div>
                 </div>
                 <div class="flex top-mob-menu">
                     <div class="dropdown">
@@ -264,9 +269,6 @@
                     />
                   </svg>
                             </a>
-                        </li>
-                        <li class="mob-menu-bar">
-                            <i id="open-mob-menu" class="fas fa-bars"></i>
                         </li>
                     </ul>
                 </div>
@@ -461,6 +463,7 @@
 
             b.click(function() {
                 $(this).children("i").toggleClass("angle-down");
+                b.not(this).children("i").removeClass("angle-down");
                 $(this).next().slideToggle(500);
                 b.not(this).next().slideUp(500);
             });

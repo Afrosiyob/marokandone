@@ -36,12 +36,16 @@ div.mob-menu {
     width: 300px;
     height: 100vh;
     background-color: white;
-    z-index: 10;
+    z-index: 999;
     transition: all 0.2s linear;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     background-color: rgba(25, 44, 113, 1);
+}
+
+.landing-content {
+    overflow: hidden;
 }
 
 div.mob-menu div {
@@ -126,6 +130,70 @@ div.mob-menu div button i:hover {
 
 p {
     margin: 0;
+}
+
+.main-top-nav-menu {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    align-content: center;
+}
+
+.main-top-nav-menu .right-menu {
+    display: none;
+}
+
+.main-top-nav-menu .right-menu i {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-top-nav-menu .right-menu i:hover {
+    cursor: pointer;
+}
+
+@media all and ( max-width:768px) {
+    .main-top-nav-menu {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .main-top-nav-menu .right-menu {
+        display: flex;
+    }
+}
+
+.main-page-first-content {
+    display: flex;
+}
+
+@media all and ( max-width:998px) {
+    .main-page-first-content {
+        /* display: flex; */
+        flex-direction: column;
+    }
+}
+
+.main-page-first-content .main-page-first-content-right {
+    width: 100% !important;
+}
+
+.main-page-second-content {
+    display: flex;
+}
+
+@media all and ( max-width:998px) {
+    .main-page-second-content {
+        flex-direction: column;
+    }
+    .main-page-second-content .card-one,
+    .card-two,
+    .card-three {
+        margin-top: 30px;
+    }
+    .main-page-second-content .card-news {
+        max-width: 100%;
+    }
 }
 
 .flex {
@@ -259,6 +327,7 @@ nav a:hover,
 }
 
 .btn.btn-med {
+    margin-right: 20px;
     font-size: 15px;
     height: 42px;
     line-height: 36px;
@@ -351,6 +420,14 @@ nav a:hover,
     bottom: 100px;
     left: 100px;
     z-index: 9;
+    transition: all 0.2s linear;
+}
+
+@media all and ( max-width: 768px) {
+    .sliderNav {
+        left: 20px;
+        bottom: 20px;
+    }
 }
 
 .sliderNavBorder {
@@ -410,6 +487,12 @@ nav a:hover,
     line-height: 64px;
 }
 
+@media all and ( max-width: 768px) {
+    .slide-content .title {
+        font-size: 30px;
+    }
+}
+
 .swiper-button-disabled {
     opacity: 0.5;
 }
@@ -445,9 +528,11 @@ nav a:hover,
     min-height: 430px;
     z-index: 200;
     height: 100%;
+    padding: 20px;
 }
 
 .card-background {
+    /* padding: 20px; */
     top: 0;
     position: absolute;
     width: 100%;
@@ -496,6 +581,7 @@ nav a:hover,
     color: #ffffff;
     z-index: 2;
     margin-bottom: 50px;
+    padding: 0 20px;
 }
 
 .inline-card .desc {
@@ -603,6 +689,7 @@ nav a:hover,
     height: 300px;
     margin-top: 30px;
     align-items: center;
+    /* padding: 20px; */
 }
 
 .inline-card::before {
@@ -614,6 +701,19 @@ nav a:hover,
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
     content: "";
+}
+
+.main-page-first-content-top-box {
+    display: flex;
+}
+
+@media all and ( max-width:768px) {
+    .main-page-first-content-top-box {
+        flex-direction: column;
+    }
+    .main-page-first-content-top-box .card {
+        margin-top: 30px;
+    }
 }
 
 .first-content-group {
@@ -631,6 +731,13 @@ nav a:hover,
     flex: 1;
     flex-direction: column;
     max-width: calc(33.3333% - 20px);
+}
+
+@media all and ( max-width:998px) {
+    .second-content-group {
+        max-width: 100%;
+        margin-top: 30px;
+    }
 }
 
 .second-content-group>div:first-child {
@@ -670,7 +777,7 @@ nav a:hover,
     list-style: none;
     background: var(--blue);
     margin: 0;
-    padding: 0;
+    padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;

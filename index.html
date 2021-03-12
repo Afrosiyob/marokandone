@@ -186,11 +186,16 @@
     <header>
         <nav>
             <div class="container">
-                <div class="flex">
-                    <a href="#home">EN</a>
-                    <a href="#news">TR</a>
-                    <a href="#news">UZ</a>
-                    <a href="#news">RU</a>
+                <div class="flex main-top-nav-menu">
+                    <div class="left-menu flex">
+                        <a href="#home">EN</a>
+                        <a href="#news">TR</a>
+                        <a href="#news">UZ</a>
+                        <a href="#news">RU</a>
+                    </div>
+                    <div class="right-menu flex">
+                        <i id="open-mob-menu" class="fas fa-bars"></i>
+                    </div>
                 </div>
                 <div class="flex top-mob-menu">
                     <div class="dropdown">
@@ -275,7 +280,6 @@
             </button>
                 </div>
             </div>
-            ...
         </div>
         <!-- If we need pagination -->
 
@@ -292,9 +296,9 @@
         </div>
     </section>
     <section class="landing-content">
-        <div class="flex-content-container">
+        <div class="flex-content-container main-page-first-content">
             <div class="first-content-group">
-                <div class="flex">
+                <div class="main-page-first-content-top-box">
                     <div class="card flex-1">
                         <div class="card-content">
                             <img src="img/card-1.jpg" class="card-background" />
@@ -319,6 +323,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="inline-card">
                     <img src="img/card-4.jpg" class="card-background" style="object-position: top" />
                     <p class="title">GARAJ</p>
@@ -328,7 +333,8 @@
                     <button class="btn btn-med">Get Detailed Information</button>
                 </div>
             </div>
-            <div class="second-content-group">
+
+            <div class="second-content-group main-page-first-content-right">
                 <div>
                     <img src="img/card-3.jpg" class="card-background" />
                     <p class="title">News and Announcements</p>
@@ -385,8 +391,8 @@
           </ul>
         </div>
       </div>
-      <div class="flex-content-container cg30">
-        <div class="card flex-1">
+      <div class="flex-content-container cg30 main-page-second-content">
+        <div class="card flex-1 card-one">
           <div class="card-content">
             <img src="img/card-5.jpg" class="card-background" />
             <p class="title">ETÜ NEWS</p>
@@ -398,7 +404,8 @@
             ><a href="#"><i class="fas fa-ellipsis-h"></i></a>
             </div>
         </div>
-        <div class="card flex-1">
+
+        <div class="card flex-1 card-two">
             <div class="card-content">
                 <img src="img/card-6.jpg" class="card-background" />
                 <p class="title">RESERVATION</p>
@@ -410,7 +417,7 @@
             ><a href="#"><i class="fas fa-ellipsis-h"></i></a>
             </div>
         </div>
-        <div class="card-news flex-1">
+        <div class="card-news flex-1 card-three">
             <div class="news-header">
                 <img src="img/news-logo.png" alt="" />
                 <p class="desc">Social Network of TOBB ETÜ</p>
@@ -479,8 +486,8 @@
             </div>
         </div>
         </div>
-        <div class="flex-content-container cg30">
-            <div class="card flex-1">
+        <div class="flex-content-container cg30 main-page-second-content">
+            <div class="card flex-1 card-one">
                 <div class="card-content">
                     <div class="card-background film"></div>
                     <p class="title">TOBB ETÜ PROMOTIONAL FILM</p>
@@ -490,7 +497,8 @@
             </button>
                 </div>
             </div>
-            <div class="card flex-1">
+
+            <div class="card flex-1 card-two">
                 <div class="card-content">
                     <img src="img/card-8.jpg" class="card-background" />
                     <p class="title">COOPERATIVE EDUCATION</p>
@@ -505,7 +513,8 @@
             ><a href="#"><i class="fas fa-ellipsis-h"></i></a>
                 </div>
             </div>
-            <div class="card flex-1">
+
+            <div class="card flex-1 card-three">
                 <div class="card-content">
                     <img src="img/card-9.jpg" class="card-background" />
                     <p class="title">CAMPUS LIFE</p>
@@ -634,6 +643,7 @@
 
             b.click(function() {
                 $(this).children("i").toggleClass("angle-down");
+                b.not(this).children("i").removeClass("angle-down");
                 $(this).next().slideToggle(500);
                 b.not(this).next().slideUp(500);
             });
