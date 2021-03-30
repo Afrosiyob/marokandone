@@ -28,6 +28,42 @@ body {
     position: relative;
 }
 
+.under-nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    z-index: 99999;
+}
+
+.under-nav p {
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+    white-space: nowrap;
+    position: absolute;
+    animation-name: titleText;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titleText {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -20%;
+    }
+}
+
 div.mob-menu {
     /* padding: 20px; */
     position: fixed;
