@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
@@ -321,12 +324,24 @@
         <div class="container">
             <div class="form-body">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 mb-3">
                         <div class="left-side">
-                            this is left side
+                            <div class="left-acc-wrap">
+                                <div class="left-acc-top p-3  d-flex justify-content-between">
+                                    <p class="p-0 m-0">menu</p> <i class="fas fa-plus"></i>
+                                </div>
+                                <ul class="left-acc-under ">
+                                    <li class="py-3 pl-4"> sub menu </li>
+                                    <li class="py-3 pl-4"> sub menu </li>
+                                    <li class="py-3 pl-4"> sub menu </li>
+                                    <li class="py-3 pl-4"> sub menu </li>
+                                </ul>
+                            </div>
+
+
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8">
+                    <div class="col-sm-12 col-md-8 mb-3">
                         <div class="right-side">
                             this is right side
                         </div>
@@ -415,11 +430,23 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
     <script>
         $( document ).ready( function () {
             var a = $( ".person-card" );
+
+
 
             a.click( function () {
                 $( this ).next().slideToggle( 500 );
@@ -431,6 +458,29 @@
                     .children( ".slide-down-icon" )
                     .removeClass( "slide-down-icon-active" );
             } );
+
+
+            var formAcc = $( '.form-body .left-side .left-acc-wrap .left-acc-top' );
+
+            formAcc.click( function () {
+
+                $( this ).next().slideToggle( 500 );
+                // formAcc.not( this ).next().slideUp( 500 );
+
+
+
+                if ( $( this ).children( 'i' ).attr( 'class' ) === 'fas fa-plus' ) {
+
+                    $( this ).children( 'i' ).removeClass( 'fas fa-plus' ).addClass( 'fas fa-minus' );
+                    // formAcc.not( this ).children( 'i' ).removeClass( 'fas fa-minus' ).addClass( 'fas fa-plus' );
+
+                } else {
+                    $( this ).children( 'i' ).removeClass( 'fas fa-minus' ).addClass( 'fas fa-plus' );
+                    // formAcc.not( this ).children( 'i' ).removeClass( 'fas fa-plus' ).addClass( 'fas fa-minus' );
+                }
+
+            } );
+
 
             $( "#open-mob-menu" ).click( function ( e ) {
                 e.preventDefault();

@@ -12,6 +12,9 @@
 @import 'tobb.css';
 @import 'second.css';
 @import 'undergraduate.css';
+
+@import 'formpage.css';
+
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
