@@ -1,15 +1,10 @@
-.form-body {
-    /* background-color: cyan; */
-}
+
 
 .form-body .left-side {
-    /* background-color: red; */
+  
     border: 1px solid #ddd;
 }
 
-.form-body .left-side .left-acc-wrap {
-    /* border-bottom: 1px solid #ddd; */
-}
 
 
 
@@ -32,10 +27,24 @@
     margin: 0;
     list-style-type: none;
     display: none;
-    /* border-bottom: 1px solid #ddd; */
+   
 }
 
 .form-body .left-side .left-acc-wrap .left-acc-under  li {
     border-bottom: 1px solid #ddd;
     color: #3F77B6;
+}
+
+
+.form-body .right-side .top-title h4  {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    color: #0F4C90;
+    border-bottom: 1px solid #0F4C90;
 }
