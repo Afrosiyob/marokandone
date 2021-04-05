@@ -78,3 +78,56 @@
 .plan-univer-slide {
     display: none;
 }
+
+.form-body .right-side form .border-file {
+    border: 1px dashed #ccc;
+    position: relative;
+    transition: all 0.2s linear;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.form-body .right-side form .border-file:hover {
+    border: 1px dashed #1010b6;
+}
+
+.form-body .right-side form .border-file label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    background-color: #EEEEEE;
+    padding: 5px 20px;
+    color: black;
+    transition: all 0.2s linear;
+}
+
+.form-body .right-side form .border-file:hover label {
+    color: white;
+    background-color: #1010b6;
+}
+
+.form-body .right-side form .border-file label:hover {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.form-body .right-side form input.captcha {
+    border: none;
+    outline: none;
+}
+
+.form-body .right-side form button[type="submit"] {
+    padding: 5px 30px;
+    border-radius: 50px;
+    height: 50px;
+    border-color: #0F4C90;
+    color: #0F4C90;
+    background-color: white;
+}
