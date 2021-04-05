@@ -1,12 +1,6 @@
-
-
 .form-body .left-side {
-  
     border: 1px solid #ddd;
 }
-
-
-
 
 .form-body .left-side .left-acc-wrap .left-acc-top {
     /* background-color: red; */
@@ -27,16 +21,26 @@
     margin: 0;
     list-style-type: none;
     display: none;
-   
 }
 
-.form-body .left-side .left-acc-wrap .left-acc-under  li {
+.form-body .left-side .left-acc-wrap .left-acc-under li {
     border-bottom: 1px solid #ddd;
     color: #3F77B6;
+    background-color: #FBFBFC;
+    transition: all 0.2s linear;
 }
 
+.form-body .left-side .left-acc-wrap .left-acc-under li:hover {
+    background-color: white;
+}
 
-.form-body .right-side .top-title h4  {
+.form-body .left-side .left-acc-wrap .left-acc-under li a {
+    transition: all 0.2s linear;
+    text-decoration: none;
+    width: 100%;
+}
+
+.form-body .right-side .top-title h4 {
     margin-bottom: 20px;
     font-size: 18px;
     font-size: 1.125rem;
@@ -47,4 +51,30 @@
     margin-top: 30px;
     color: #0F4C90;
     border-bottom: 1px solid #0F4C90;
+}
+
+.form-body .right-side form label:not(.checkbox-label):after {
+    display: inline-block;
+    margin-left: 5px;
+    content: "*";
+    color: #B22029;
+    box-sizing: border-box;
+}
+
+.form-body .right-side form label.checkbox-label:hover {
+    cursor: pointer;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+.form-body .right-side form .hide-check-form,
+.slide-gpa,
+.gpa-small-text,
+.scholarship-slide,
+.universityohter-slide,
+.ankara-slide,
+.plan-univer-slide {
+    display: none;
 }
