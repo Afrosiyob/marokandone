@@ -14,6 +14,7 @@
 @import 'undergraduate.css';
 @import 'formpage.css';
 @import 'news.css';
+@import 'singlenews.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
