@@ -61,7 +61,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 70%;
+    left: 90%;
     /* margin-left: -100px; */
     top: 0;
     transform: skew(10deg);
@@ -74,5 +74,5 @@
 }
 
 .page-one-body .page-one-section .right-section {
-    background-color: blue;
+    background-color: red;
 }
