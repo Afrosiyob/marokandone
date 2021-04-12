@@ -16,6 +16,7 @@
 @import 'news.css';
 @import 'singlenews.css';
 @import 'pageOne.css';
+@import 'pageTwo.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
