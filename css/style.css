@@ -15,12 +15,17 @@
 @import 'formpage.css';
 @import 'news.css';
 @import 'singlenews.css';
+@import 'pageOne.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
     --dark-gray: #d9d9d9;
     --light-gray: #b3b2b2;
     --blue: rgba(15, 76, 144, 1);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

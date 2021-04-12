@@ -1,0 +1,78 @@
+.page-one {
+    margin-top: 0 !important;
+}
+
+.page-one-body {
+    position: relative;
+}
+
+.page-one-body .page-one-header {
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.page-one-body .page-one-header a {
+    width: 100%;
+    background-color: white;
+    padding: 17px 20px;
+    color: #0F4C90;
+    letter-spacing: .02em;
+    transition: all 0.2s linear;
+    text-align: center;
+}
+
+.page-one-body .page-one-header a:hover {
+    background-color: #EFF5FC;
+}
+
+.page-one-body .page-one-header a.hover-bg {
+    background-color: #EFF5FC;
+}
+
+.page-one-body .page-one-section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.page-one-body .page-one-section .left-section,
+.right-section {
+    width: 50%;
+    height: 100%;
+}
+
+.page-one-body .page-one-section .left-section {
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+    /* border-right: 50px solid green;
+    border-top: 50px solid yellow;
+    border-bottom: 100px solid orange; */
+    box-sizing: border-box;
+    background: url("https://www.etu.edu.tr/views/etu/_test/aday_ogrenci/ortak_egitim.jpg?v=1.01") center center / cover no-repeat;
+}
+
+.page-one-body .page-one-section .left-section::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 70%;
+    /* margin-left: -100px; */
+    top: 0;
+    transform: skew(10deg);
+    -o-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    background: white;
+    content: "";
+}
+
+.page-one-body .page-one-section .right-section {
+    background-color: blue;
+}
