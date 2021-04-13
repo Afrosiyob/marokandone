@@ -19,6 +19,7 @@
 @import 'pageTwo.css';
 @import 'calendar.css';
 @import 'contact.css';
+@import 'reseversion.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
