@@ -64,6 +64,7 @@
 
 .history-header .header-nav .left-item img {
     max-width: 100%;
+    width: 100px;
     height: auto;
     /* margin-top: 40px; */
 }
