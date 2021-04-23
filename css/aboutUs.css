@@ -1,69 +1,19 @@
-            .decision-wrap {
-                position: relative;
-                padding: 0 20px;
-            }
-            
-            .decision-wrap .dec-bg {
-                position: absolute;
-                /* left: calc(50% - 1441px/2 + 249.5px); */
-                left: 50%;
-                /* bottom: 100%; */
-                top: 147px;
-                background-image: url('../img/decision-imgbg.png');
-                width: 1441px;
-                height: 1179px;
-                background-repeat: no-repeat;
-                z-index: -1;
-                opacity: 0.3;
-            }
-            
-            .decision-body {
-                display: flex;
-                position: relative;
-                justify-content: space-between;
-            }
-            
-            @media all and ( max-width:1200px) {
-                .decision-body {
-                    flex-direction: column;
-                }
-            }
-            
-            .decision-body img {
-                width: 100%;
-                max-width: 703px;
-                height: auto;
-                /* margin-left: 50px; */
-                box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-            }
-            
-            @media all and ( max-width:1200px) {
-                .decision-body img {
-                    max-width: 90%;
-                    align-self: center;
-                    margin-left: 0;
-                }
-            }
-            
-            .decision-body div.left-item {
-                color: rgba(0, 0, 0, 1);
-                /* margin-left: 50px; */
-                /* margin-right: 50px; */
-                /* padding-right: 50px; */
-                width: 40%;
-            }
-            
-            .decision-body div p {
-                /* padding-right: 50px; */
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            }
-            
-            @media all and ( max-width:1200px) {
-                .decision-body div.left-item {
-                    margin-bottom: 50px;
-                    margin-left: 0;
-                    padding: 0 10px;
-                    width: 90%;
-                    align-self: center;
-                }
-            }
+.about-body .about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.about-body .about-info p {
+    text-indent: 20px;
+    letter-spacing: .04em;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #666;
+}
+
+.about-body .about-info h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}

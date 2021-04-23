@@ -21,6 +21,7 @@
 @import 'contact.css';
 @import 'reseversion.css';
 @import 'enter.css';
+@import 'otherpage.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
@@ -349,7 +350,7 @@ p {
 
 .container {
     margin: auto !important;
-    max-width: 1440px !important;
+    max-width: 1120px !important;
     /* width: 100%; */
     transition: all 0.2s linear !important;
 }

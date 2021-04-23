@@ -1,0 +1,16 @@
+.other-page-navbar {}
+
+.other-page-navbar .other-page-nav {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafb;
+    position: relative;
+    width: 100%;
+}
+
+.other-page-navbar .other-page-nav .first-nav-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
