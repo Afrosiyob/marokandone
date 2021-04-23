@@ -1,0 +1,54 @@
+.teachers {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and ( max-width:1200px) {
+    .teachers {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and ( max-width:900px) {
+    .teachers {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and ( max-width:768px) {
+    .teachers {
+        grid-template-columns: 1fr;
+    }
+}
+
+.teachers .teacher {
+    /* max-width: 300px; */
+    transition: all 0.2s linear;
+    padding: 10px;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+}
+
+.teachers .teacher img {
+    width: 100%;
+    height: auto;
+}
+
+.teachers .teacher .teacher-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.teachers .teacher .teacher-info p {
+    width: 100%;
+    text-align: center;
+}
+
+.teacher-animate {
+    transform: scale(1.05);
+}
