@@ -22,6 +22,7 @@
 @import 'reseversion.css';
 @import 'enter.css';
 @import 'otherpage.css';
+@import '404.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
@@ -161,23 +162,73 @@ div.mob-menu {
     background-color: white;
     z-index: 999;
     transition: all 0.2s linear;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: rgba(25, 44, 113, 1);
+    background-color: #0F4C90;
 }
 
 .landing-content {
     overflow: hidden;
 }
 
-div.mob-menu div {
-    width: 85%;
+div.mob-menu .mob-top-header {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
+}
+
+div.mob-menu .mob-top-header .mob-search-input {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+div.mob-menu .mob-top-header .mob-search-input input {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+div.mob-menu #close-mob-menu {
+    /* background-color: red; */
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+}
+
+div.mob-menu .mob-header {
+    width: 100%;
+    display: block;
+    padding: 0 20px;
+    position: relative;
+    height: 34px;
+    line-height: 36px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.64);
+    letter-spacing: .3em;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.mob-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.mob-menu ul li a {
+    display: block;
+    position: relative;
+    font-size: 13px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    outline: none;
+    letter-spacing: .04em;
+    color: #fff;
 }
 
 div.mob-menu div img {
@@ -189,7 +240,7 @@ div.mob-menu ul.inner-mob-menu {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     overflow-y: auto;
 }
 

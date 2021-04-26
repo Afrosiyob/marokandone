@@ -2273,9 +2273,9 @@
                                     <div class="border-file p-3">
 
 
-                                        <input type="file" class="ml-1" id="file12">
-
                                         <label for="file12">Chose File</label>
+                                        <input type="file" class="ml-1 fileId" id="file12">
+                                        <div class="fileName"> </div>
 
                                     </div>
                                 </div>
@@ -2286,9 +2286,10 @@
                                     <div class="border-file p-3">
 
 
-                                        <input type="file" class="ml-1" id="file13">
 
                                         <label for="file13">Chose File</label>
+                                        <input type="file" class="ml-1 fileId" id="file13">
+                                        <div class="fileName"> </div>
 
                                     </div>
                                 </div>
@@ -2421,6 +2422,16 @@
 
     <script>
         $(document).ready(function() {
+
+
+            $('.fileId').change(function(e) {
+                e.preventDefault();
+
+
+                $(this).next('.fileName').text(e.currentTarget.files[0].name);
+
+
+            });
 
 
             $('.planuniver-checkbox').change(function(e) {
