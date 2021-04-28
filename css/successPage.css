@@ -1,0 +1,85 @@
+.success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.success-page .icon-box {
+    width: 150px;
+    height: 150px;
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.success-page .icon-box i {
+    font-size: 100px;
+}
+
+.success-page h1 {
+    color: rgb(114, 113, 113);
+    text-align: center;
+}
+
+.success-page .data-line {
+    /* background-color: red; */
+    width: 40%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}
+
+@media only screen and ( max-width:768px) {
+    .success-page .data-line {
+        width: 90%;
+    }
+}
+
+.success-page .data-line .left-data {
+    color: grey;
+    font-weight: bold;
+}
+
+.success-page .data-line .right-data .submit-tag-success {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(9, 169, 9);
+    color: white;
+}
+
+.success-page .data-line .right-data .submit-tag-error {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(209, 16, 16);
+    color: white;
+}
+
+.success-page .buttons-con .action-link-wrap {
+    margin-top: 40px;
+}
+
+.success-page .buttons-con .action-link-wrap a {
+    background: #b22029;
+    padding: 8px 25px;
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.success-page .buttons-con .action-link-wrap a:hover {
+    background: #5A5C6C;
+    color: #fff;
+}

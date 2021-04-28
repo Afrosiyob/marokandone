@@ -23,6 +23,7 @@
 @import 'enter.css';
 @import 'otherpage.css';
 @import '404.css';
+@import 'successPage.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
