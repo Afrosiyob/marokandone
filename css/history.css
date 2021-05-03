@@ -134,6 +134,12 @@
     margin: 60px 0;
 }
 
+@media only screen and ( max-width:900px) {
+    .section-body {
+        margin: 20px 0;
+    }
+}
+
 .section-body div p {
     color: rgba(50, 50, 50, 1);
     font-size: 17px;

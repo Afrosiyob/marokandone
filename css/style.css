@@ -26,6 +26,9 @@
 @import 'successPage.css';
 @import 'documentPage.css';
 @import 'preparatoryTraining.css';
+@import 'newHistory.css';
+@import 'learningEnglish.css';
+@import 'breadcump.css';
 :root {
     --red: #b22029;
     --gray: #e2e2e2;
@@ -595,6 +598,12 @@ nav a:hover,
     background-clip: padding-box;
 }
 
+@media only screen and ( max-width:900px) {
+    .btn.btn-lg {
+        height: 28px;
+    }
+}
+
 .btn-film {
     font-size: 28px;
     border: 5px solid #ffffff;
@@ -1073,7 +1082,8 @@ nav a:hover,
     letter-spacing: 0.15em;
     color: var(--dark-gray);
     z-index: 2;
-    margin: 30px 20px;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 .second-content-group .desc img {
