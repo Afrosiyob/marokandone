@@ -1,7 +1,3 @@
-.second-body .second-header {
-    /* background-color: red; */
-}
-
 .second-body {
     padding: 0 20px;
 }
@@ -48,15 +44,33 @@
 }
 
 .second-body .second-under .second-under-item {
-    background-color: red;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
-    height: 326px;
+    height: 226px;
     border-radius: 20px;
+    overflow: hidden;
     background-image: url('../img/second1.jfif');
     background-size: cover;
     background-position: center;
     content: "";
+    position: relative;
+}
+
+.second-body .second-under .second-under-item .info-place {
+    position: absolute;
+    transition: all 0.2s linear;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.second-body .second-under .second-under-item:hover .info-place {
+    opacity: 1;
+    transform: scale(1.2);
 }
