@@ -79,6 +79,25 @@
     display: none;
 }
 
+.refresh-btn {
+    /* background-color: red; */
+    border: 2px solid lightskyblue;
+    outline: none;
+    transition: all 0.2s linear;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 6px;
+}
+
+.refresh-btn:hover {
+    background-color: lightskyblue;
+}
+
 .form-body .right-side form .border-file {
     border: 1px dashed #ccc;
     position: relative;
