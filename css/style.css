@@ -1234,3 +1234,10 @@ footer {
     line-height: 16px;
     color: #dbdcde;
 }
+
+
+
+.card-images-payment img {
+        width: 100%;
+        height: auto;
+}
