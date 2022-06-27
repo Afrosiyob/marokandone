@@ -109,9 +109,22 @@ header .header-nav {
     margin-top: 20px;
     /* background-color: red; */
     position: absolute;
-    top: 60px;
+    top: 55px;
     z-index: 9;
     width: 100%;
+
+   
+}
+
+@media all and (max-width:1166px) {
+    header .header-nav {
+        top: 82px;
+    }
+}
+@media all and (max-width:768px) {
+    header .header-nav {
+        top: 70px;
+    }
 }
 
 header .header-nav .container {
