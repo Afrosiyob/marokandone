@@ -1254,3 +1254,11 @@ footer {
         width: 100%;
         height: auto;
 }
+
+.payment__count_down {
+    font-size: 40px;
+    color: var(--red);
+    /* text-shadow: 2px 2px 4px #192C71; */
+    font-weight: bold;
+    transition: all 0.2s linear;
+}
